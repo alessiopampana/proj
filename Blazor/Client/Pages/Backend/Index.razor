@@ -1,0 +1,31 @@
+﻿@page "/Backend/"
+@inherits Backend_Index_Page
+
+<div>
+    <button @onclick="NewSweet" class="btn btn-primary">Nuovo dolce</button>
+</div>
+
+<div class="mt-2">
+    @if (Sweets.Count == 0)
+    {
+        <span class="mt-2">Nessun dolce presente</span>
+    }
+    else
+    {
+        <div class="form-row">
+            @foreach (cSweet obj in Sweets)
+            {
+                <div class="card col-lg-3">
+                    <div class="card-body">
+                        <h5 class="card-title">@obj.Name</h5>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-outline-info btn-b" @onclick="() => EditSweet(obj.ID)"><i class="fas fa-edit"></i><br />Modifica</button>
+                        <button class="btn btn-outline-primary btn-b" @onclick="() => DeleteSweet(obj.ID)"><i class="fas fa-trash-alt"></i><br />Elimina</button>
+                    </div>
+                </div>
+            }
+        </div>    
+    }
+</div>
+

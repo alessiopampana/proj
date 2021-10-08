@@ -1,0 +1,8 @@
+﻿<StaticWebAssets Version="1.0">
+  <ContentRoot BasePath="/" Path="C:\Users\WEBCOMWS001\Desktop\Esercizio\Blazor\Client\bin\Debug\net5.0\wwwroot\" />
+  <ContentRoot BasePath="/" Path="C:\Users\WEBCOMWS001\Desktop\Esercizio\Blazor\Client\obj\Debug\net5.0\scopedcss\bundle\" />
+  <ContentRoot BasePath="/" Path="C:\Users\WEBCOMWS001\Desktop\Esercizio\Blazor\Client\wwwroot\" />
+  <ContentRoot BasePath="_content/Blazored.Toast" Path="C:\Users\WEBCOMWS001\.nuget\packages\blazored.toast\3.1.2\build\..\staticwebassets\" />
+  <ContentRoot BasePath="_content/BrowserInterop" Path="C:\Users\WEBCOMWS001\.nuget\packages\browserinterop\1.1.2\build\..\staticwebassets\" />
+  <ContentRoot BasePath="_content/Microsoft.AspNetCore.Components.WebAssembly.Authentication" Path="C:\Users\WEBCOMWS001\.nuget\packages\microsoft.aspnetcore.components.webassembly.authentication\5.0.8\build\..\staticwebassets\" />
+</StaticWebAssets>

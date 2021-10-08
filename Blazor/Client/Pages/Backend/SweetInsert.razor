@@ -1,0 +1,42 @@
+﻿@page "/SweetInsert/{ID:int?}"
+@inherits SweetInsert_Page
+
+<EditForm Model="CurrentSweet" OnValidSubmit="InsertSweet">
+    <DataAnnotationsValidator />
+    <div class="mb-3 col-4">
+        <label for="title">Nome</label>
+        <InputText id="title" @bind-Value="CurrentSweet.Name" class="form-control" required></InputText>
+    </div>
+    <div class="mb-3 col-4">
+        <label for="title">Prezzo</label>
+        <InputNumber id="title" @bind-Value="CurrentSweet.Price" class="form-control" required></InputNumber>
+    </div>
+    <div class="mb-3 col-4">
+        <label for="title">Disponibilità</label>
+        <InputNumber id="title" @bind-Value="CurrentSweet.Availability" class="form-control" required></InputNumber>
+    </div>
+    <div class="mb-3 col-4">
+        <button type="button" class="btn btn-warning" @onclick="AddIngredient">Aggiungi ingrediente</button>
+    </div>
+    @if (CurrentSweet.Ingrediants != null)
+    {
+        @foreach (cIngrediant obj in CurrentSweet.Ingrediants)
+        {
+            <div class="row">
+                <div class="mb-3 col-3">
+                    <input type="text" class="form-control" placeholder="Nome" @bind-value="obj.Name"/>
+                </div>
+                <div class="mb-3 col-3">
+                    <input type="number" class="form-control" placeholder="Quantità" @bind-value="obj.Amount" />
+                </div>
+                <div class="mb-3 col-3">
+                    <input type="text" class="form-control" placeholder="Unità di misura" @bind-value="obj.UnitOfMeasure" />
+                </div>
+            </div>
+        }
+    }
+    <div class="mt-5">
+        <button type="submit" class="btn btn-primary">Salva</button>
+        <button type="button" class="btn btn-secondary" @onclick="Back">Indietro</button>
+    </div>
+</EditForm>

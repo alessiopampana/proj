@@ -1,0 +1,33 @@
+﻿@page "/"
+@inherits Index_Page
+
+@if (Sweets.Count == 0)
+{
+    <span class="mt-2">Nessun dolce presente</span>
+}
+else
+{
+<div class="row">
+    @foreach (cSweet obj in Sweets)
+    {
+        <div class="card col-lg-3">
+            <div class="card-body">
+                <h5 class="card-title">@obj.Name</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Disponibili: @obj.Availability</h6>
+                <p class="card-text">Prezzo: @obj.Price</p>
+                <a class="card-link" data-bs-toggle="collapse" href="@("#Details" + obj.ID)" role="button" aria-expanded="false" aria-controls="Details">Ingredienti</a>
+            </div>
+            <div class="collapse" id="@("Details" + obj.ID)">
+                <div class="card card-body" style="margin-bottom: 15px; background-color: #f1f1f1;">
+                    @foreach (cIngrediant ing in obj.Ingrediants)
+                    {
+                        <div class="=form-row">
+                            <span>@ing.Name :</span><span>@ing.Amount @ing.UnitOfMeasure</span>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    }
+</div>
+}

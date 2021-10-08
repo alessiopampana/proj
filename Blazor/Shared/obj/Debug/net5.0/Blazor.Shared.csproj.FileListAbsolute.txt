@@ -1,0 +1,11 @@
+C:\Users\WEBCOMWS001\Desktop\Esercizio\Blazor\Shared\bin\Debug\net5.0\Blazor.Shared.deps.json
+C:\Users\WEBCOMWS001\Desktop\Esercizio\Blazor\Shared\bin\Debug\net5.0\Blazor.Shared.dll
+C:\Users\WEBCOMWS001\Desktop\Esercizio\Blazor\Shared\bin\Debug\net5.0\ref\Blazor.Shared.dll
+C:\Users\WEBCOMWS001\Desktop\Esercizio\Blazor\Shared\bin\Debug\net5.0\Blazor.Shared.pdb
+C:\Users\WEBCOMWS001\Desktop\Esercizio\Blazor\Shared\obj\Debug\net5.0\Blazor.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\WEBCOMWS001\Desktop\Esercizio\Blazor\Shared\obj\Debug\net5.0\Blazor.Shared.AssemblyInfoInputs.cache
+C:\Users\WEBCOMWS001\Desktop\Esercizio\Blazor\Shared\obj\Debug\net5.0\Blazor.Shared.AssemblyInfo.cs
+C:\Users\WEBCOMWS001\Desktop\Esercizio\Blazor\Shared\obj\Debug\net5.0\Blazor.Shared.csproj.CoreCompileInputs.cache
+C:\Users\WEBCOMWS001\Desktop\Esercizio\Blazor\Shared\obj\Debug\net5.0\Blazor.Shared.dll
+C:\Users\WEBCOMWS001\Desktop\Esercizio\Blazor\Shared\obj\Debug\net5.0\ref\Blazor.Shared.dll
+C:\Users\WEBCOMWS001\Desktop\Esercizio\Blazor\Shared\obj\Debug\net5.0\Blazor.Shared.pdb

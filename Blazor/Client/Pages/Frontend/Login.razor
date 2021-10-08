@@ -1,0 +1,21 @@
+﻿@page "/Login"
+@inherits Login_Page
+
+
+<div class="card card-login mx-auto mt-5 mb-5" @onkeypress="Enter">
+    <div class="card-header py-2 text-center">
+        <span class="logo-big color-gold">Login</span>
+    </div>
+    <div class="card-body">
+        <div class="form-group">
+            <input id="email" type="text" class="form-control" placeholder="Email" required="required" autofocus="autofocus" @bind-value="Email" @bind-value:event="oninput" />
+        </div>
+        <div class="form-group">
+            <input type="password" class="form-control" placeholder="Password" required="required" @bind-value="Password" @bind-value:event="oninput" />
+        </div>
+        <button id="btnLogin" class="btn btn-primary btn-block" @onclick="OnLogin">Accedi</button>
+    </div>
+</div>
+
+
+
